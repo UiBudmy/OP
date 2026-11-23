@@ -10,15 +10,17 @@ function seq(... args) {
             return next;
         }
 
+        let res = arg;
+
         for (let i = funcs.length - 1; i >= 0; i--){
-            arg = funcs[i](arg);
+            res = funcs[i](res);
 
         }
 
-        return arg
+        return res;
     }
     
-    return next
+    return next;
 }
 
 console.log(
