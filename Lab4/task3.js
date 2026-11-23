@@ -11,8 +11,8 @@ function ages(necrolog) {
     const res = {};
 
 
-    for (const person in necrolog) {
-        person = necrolog[name]
+    for (const name in necrolog) {
+        const person = necrolog[name]
 
         res[name] = person.died - person.born;
     }
