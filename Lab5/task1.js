@@ -1,14 +1,13 @@
 'use strict'
 
 function seq(...args) {
-
     function next(arg) {
 
         if (typeof arg === 'function'){
             args.push(arg);
             return next;
         }
-
+        
         let res = arg;
 
         for (let i = args.length - 1; i >= 0; i--){
@@ -18,7 +17,6 @@ function seq(...args) {
 
         return res;
     }
-    
     return next;
 }
 
