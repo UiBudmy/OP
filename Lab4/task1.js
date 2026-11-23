@@ -46,16 +46,16 @@ function sum5(...args) {
 
 
 const a = sum1(1, 2, 3);
-console.dir(a);
+console.dir("a: ", a);
 
 const b = sum2(0);
-console.dir(b);
+console.dir("b: ", b);
 
 const c = sum3();
-console.dir(c);
+console.dir("c: ", c);
 
 const d = sum4(1, -1, 1);
-console.dir(d);
+console.dir("d: ", d);
 
 const e = sum5(10, -1, -1, -1);
-console.dir(e);
+console.dir("e: ", e);
