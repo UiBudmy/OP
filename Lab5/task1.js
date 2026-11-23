@@ -1,19 +1,18 @@
 'use strict'
 
 function seq(...args) {
-    const funcs = args;
 
     function next(arg) {
 
         if (typeof arg === 'function'){
-            funcs.push(arg);
+            args.push(arg);
             return next;
         }
 
         let res = arg;
 
-        for (let i = funcs.length - 1; i >= 0; i--){
-            res = funcs[i](res);
+        for (let i = args.length - 1; i >= 0; i--){
+            res = args[i](res);
 
         }
 
