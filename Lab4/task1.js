@@ -40,16 +40,22 @@ function sum4(...args) {
     return sum;
 }
 
+function sum5(...args) {
+    let sum = 0;
+    Array.prototype.reduce()
+
+}
 
 
 let res1 = sum1(1, 2, 3);
 console.dir(res1);
 
-let res2 = sum2(2, 2, 3);
+let res2 = sum2(0);
 console.dir(res2);
 
-let res3 = sum3(3, 2, 3);
+let res3 = sum3();
 console.dir(res3);
 
-let res4 = sum4(4, 2, 3);
+let res4 = sum4(1, -1, 1);
 console.dir(res4);
+
