@@ -21,3 +21,7 @@ function seq(... args) {
     return next
 }
 
+console.log(
+    seq(x => x + 7)
+    (x => x * 2)(5)
+)
