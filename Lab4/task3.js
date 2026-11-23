@@ -13,4 +13,4 @@ function ages(necrolog) {
     }
 }
 
-console.log(ages(persons));
+//console.log(ages(persons));
