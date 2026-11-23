@@ -7,8 +7,9 @@ const persons = {
   hirohito: { born: 1901, died: 1989 },
 };
 
-function ages(x) {
-    for (const person in x) {
+function ages(necrolog) {
+    for (const person in necrolog) {
+        console.log(`${person} lived ${necrolog[person].d
         
     }
 }
