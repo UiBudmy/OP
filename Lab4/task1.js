@@ -13,7 +13,14 @@ function sum1(...args) {
 let res1 = sum1(1, 2, 3);
 console.dir(res1);
 
-// function sum2(...args) {
-//     let sum = 0;
+function sum2(...args) {
+    let sum = 0;
 
-//     for 
+    for (const num of args) {
+        sum += num;
+    }
+    return sum;
+}
+
+let res2 = sum2(2, 2, 3);
+console.dir(res2);
