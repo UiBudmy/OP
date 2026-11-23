@@ -1,6 +1,6 @@
 'use strict'
 
-
+//Функція через for
 function sum1(...args) {
     let sum = 0;
 
@@ -10,7 +10,7 @@ function sum1(...args) {
     return sum;
 }
 
-
+//Функція через for of
 function sum2(...args) {
     let sum = 0;
 
@@ -20,6 +20,7 @@ function sum2(...args) {
     return sum;
 }
 
+//Функція через while
 function sum3(...args) {
     let sum = 0;
 
@@ -30,6 +31,7 @@ function sum3(...args) {
     return sum;
 }
 
+//Функція через do while
 function sum4(...args) {
     let sum = 0;
 
@@ -40,6 +42,7 @@ function sum4(...args) {
     return sum;
 }
 
+//Функція через масив
 function sum5(...args) {
     return args.reduce((sum, num) => sum + num, 0);
 }
