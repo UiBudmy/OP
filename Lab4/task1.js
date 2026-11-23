@@ -12,3 +12,8 @@ function sum1(...args) {
 
 let res1 = sum1(1, 2, 3);
 console.dir(res1);
+
+// function sum2(...args) {
+//     let sum = 0;
+
+//     for 
