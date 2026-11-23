@@ -1,6 +1,6 @@
 'use strict'
 
-function seq(... args) {
+function seq(...args) {
     const funcs = [args];
 
     function next(arg) {
