@@ -13,5 +13,9 @@ function max(matrix) {
     return max_val;
 }
 
-const m = max([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+const m = max([ [1, 2, 3], 
+                [4, 5, 6], 
+                [7, 8, 9],
+                [10, 11, 12]
+            ]);
 console.log(m);
