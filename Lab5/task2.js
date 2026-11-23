@@ -2,7 +2,7 @@
 
 function seq(... args) {
     const funcs = [... args]
-
+    
     
 
 }
