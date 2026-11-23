@@ -8,7 +8,7 @@ function seq(... args) {
             funcs.push(arg);
             return next;
 
-            
+        
     }
 
 }
