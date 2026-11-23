@@ -1,8 +1,13 @@
 'use strict'
 
+
+//Основна функція
 function seq(...args) {
+
+
     function next(arg) {
 
+        
         if (typeof arg === 'function'){
             args.push(arg);
             return next;
