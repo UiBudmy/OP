@@ -19,4 +19,4 @@ function ages(necrolog) {
     return res;
 }
 
-ages(persons);
+console.log(ages(persons));
