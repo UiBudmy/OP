@@ -7,8 +7,10 @@ const persons = {
   hirohito: { born: 1901, died: 1989 },
 };
 
-function ages() {
-    for (const person in persons) {
-        console.log(persons[person].died - persons[person].born);
+function ages(x) {
+    for (const person in x) {
+        
     }
 }
+
+console.log(ages(persons));
