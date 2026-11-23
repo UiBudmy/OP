@@ -41,21 +41,23 @@ function sum4(...args) {
 }
 
 function sum5(...args) {
-    let sum = 0;
-    Array.prototype.reduce()
-
+    let array = [...args];
+    return array.reduce((sum, num) => sum + num, 0);
 }
 
 
-let res1 = sum1(1, 2, 3);
-console.dir(res1);
+const a = sum1(1, 2, 3);
+console.dir(a);
 
-let res2 = sum2(0);
-console.dir(res2);
+const b = sum2(0);
+console.dir(b);
 
-let res3 = sum3();
-console.dir(res3);
+const c = sum3();
+console.dir(c);
 
-let res4 = sum4(1, -1, 1);
-console.dir(res4);
+const d = sum4(1, -1, 1);
+console.dir(d);
+
+const e = sum5(10, -1, -1, -1);
+console.dir(e);
 
