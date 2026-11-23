@@ -8,10 +8,13 @@ const persons = {
 };
 
 function ages(necrolog) {
-    let res = {};
+    const res = {};
+
+
     for (const person in necrolog) {
-        res = (`${person}: ${necrolog[person].died - necrolog[person].born}`);
-        console.log(res)
+        person = necrolog[name]
+
+        res[name] = person.died - person.born;
     }
     return res;
 }
