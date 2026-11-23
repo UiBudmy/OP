@@ -16,4 +16,4 @@ function ages(necrolog) {
     return res;
 }
 
-console.log(ages(persons));
+ages(persons);
