@@ -21,6 +21,8 @@ function sum2(...args) {
 }
 
 function sum3(...args) {
+    let sum = 0;
+
     while (args.length > 0) {
         let num = args.pop();
         sum += num;
@@ -28,8 +30,15 @@ function sum3(...args) {
     return sum;
 }
 
+function sum4(...args) {
+    let sum = 0;
 
-
+    do {
+        let num = args.pop();
+        sum += num;
+    } while (args.length > 0) 
+    return sum;
+}
 
 
 
@@ -41,3 +50,6 @@ console.dir(res2);
 
 let res3 = sum3(3, 2, 3);
 console.dir(res3);
+
+let res4 = sum4(4, 2, 3);
+console.dir(res4);
