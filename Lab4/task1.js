@@ -41,8 +41,7 @@ function sum4(...args) {
 }
 
 function sum5(...args) {
-    let array = [...args];
-    return array.reduce((sum, num) => sum + num, 0);
+    return args.reduce((sum, num) => sum + num, 0);
 }
 
 
