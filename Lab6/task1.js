@@ -10,7 +10,6 @@ function pipe(...fns) {
 
     }
     return function(x) {
-
             for (const funk of fns){
                 x = funk(x)
             }
