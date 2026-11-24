@@ -5,10 +5,11 @@ function pipe(...fns) {
     for (const funk of fns){
 
         if (typeof funk !== 'function'){
-            throw new Error('INVALID')
+            throw new Error('NOT A FUNCTION')
         }
 
-        return function(x) {
+    }
+    return function(x) {
 
             let res = x
 
@@ -17,8 +18,6 @@ function pipe(...fns) {
             }
             return res
         }
-
-    }
 }
 
 const inc = x => ++x;
@@ -29,4 +28,4 @@ const f = pipe(inc, twice, cube);
 console.log(f(5));
 
 const a = pipe(inc, inc)
-console.log(f(7));
+console.log(a(7));
