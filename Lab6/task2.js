@@ -28,19 +28,16 @@ function comp(...fns) {
     }
 }
 
-const divide = x => {
-    if (x === 0) {
-        throw new Error('Division by zero');
-    }
-    return 10 / x;
-};
-const f = comp(
-    x => x + 1,
-    divide
-);
 
-f.on('error', error => {
-    console.log('ERROR:', error.message);
+const inc = x => ++x;
+const twice = x => x * 2;
+const cube = x => x ** 3;
+
+
+let f = comp(inc, twice, cube);
+console.log(f(5));
+f = comp(7);
+f.on('error', (err) => {
+  console.log('Перехоплено помилку:', err.message);
 });
-
-console.log(f(0));
+console.log(f(5));
