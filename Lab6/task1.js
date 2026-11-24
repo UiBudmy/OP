@@ -11,12 +11,10 @@ function pipe(...fns) {
     }
     return function(x) {
 
-            let res = x
-
             for (const funk of fns){
-                res = funk(res)
+                x = funk(x)
             }
-            return res
+            return x
         }
 }
 
