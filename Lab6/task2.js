@@ -35,3 +35,8 @@ const cube = x => x ** 3;
 
 const f = comp(inc, twice, cube);
 console.log(f(5));
+const a = comp(8)
+a.on('error', (err) => {
+    console.log('INVALID', err.message)
+})
+console.log(a(5))
