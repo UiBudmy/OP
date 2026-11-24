@@ -35,7 +35,3 @@ const cube = x => x ** 3;
 
 const f = comp(inc, twice, cube);
 console.log(f(5));
-
-const a = comp(inc, inc)
-console.log(a(7));
-
