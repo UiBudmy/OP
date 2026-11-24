@@ -37,7 +37,7 @@ const f = comp(inc, twice, cube);
 console.log(f(3));
 
 const a = comp(8)
-a.on('error', (err) => {
-    console.log('Error result:', err.message)
+a.on('error', e => {
+    console.log('Error result:', e.message)
 })
 console.log(a(5))
