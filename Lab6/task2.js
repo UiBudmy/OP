@@ -27,3 +27,20 @@ function comp(...fns) {
         return composed
     }
 }
+
+const divide = x => {
+    if (x === 0) {
+        throw new Error('Division by zero');
+    }
+    return 10 / x;
+};
+const f = comp(
+    x => x + 1,
+    divide
+);
+
+f.on('error', error => {
+    console.log('ERROR:', error.message);
+});
+
+console.log(f(0));
