@@ -29,3 +29,13 @@ function comp(...fns) {
     return composed
 }
 
+const inc = x => ++x;
+const twice = x => x * 2;
+const cube = x => x ** 3;
+
+const f = comp(inc, twice, cube);
+console.log(f(5));
+
+const a = comp(inc, inc)
+console.log(a(7));
+
