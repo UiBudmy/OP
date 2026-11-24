@@ -24,5 +24,6 @@ function comp(...fns) {
         if (nuhuh === 'error') {
             garb = handler
         }
+        return composed
     }
 }
