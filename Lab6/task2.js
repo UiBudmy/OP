@@ -32,6 +32,6 @@ const inc = x => x + 1;
 const twice = x => x * 2;
 const cube = x => x ** 3;
 
-const f = compose(inc, twice, cube);
+const f = comp(inc, twice, cube);
 
 console.log(f(2));
