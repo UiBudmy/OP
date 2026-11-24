@@ -1,7 +1,5 @@
 'use strict'
 
-
-
 function comp(...fns) {
     let garb = null;
 
@@ -31,15 +29,3 @@ function comp(...fns) {
 }
 
 
-const inc = x => ++x;
-const twice = x => x * 2;
-const cube = x => x ** 3;
-
-
-let f = comp(inc, twice, cube);
-console.log(f(5));
-f = comp(7);
-f.on('error', (err) => {
-  console.log('Перехоплено помилку:', err.message);
-});
-console.log(f(5));
