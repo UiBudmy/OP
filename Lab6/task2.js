@@ -14,8 +14,15 @@ function comp(...fns) {
                 if (garb) {
                     garb(error)
                 }
+                return undefined
             }
         }
+        return res
     }
 
+    composed.on = function(nuhuh, handler) {
+        if (nuhuh === 'error') {
+            garb = handler
+        }
+    }
 }
