@@ -24,8 +24,9 @@ function comp(...fns) {
         if (nuhuh === 'error') {
             garb = handler
         }
-        return composed
+        
     }
+    return composed
 }
 
 const inc = x => x + 1;
