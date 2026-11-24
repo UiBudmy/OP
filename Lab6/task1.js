@@ -27,3 +27,5 @@ console.log(f(5));
 
 const a = pipe(inc, inc)
 console.log(a(7));
+
+const b = pipe(7)
