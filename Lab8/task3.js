@@ -16,7 +16,7 @@ function contract(fn, ...types){
 
         const restype = types[types.length - 1]
 
-        if (!(res instanceof restype) && typeof res !== restype.name.toUpperCase()){
+        if (!(res instanceof restype) && typeof res !== restype.name.toLowerCase()){
             throw new TypeError('Wrong type of result')
         }
         return res
