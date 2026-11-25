@@ -1,9 +1,9 @@
 'use strict'
 
 function unique(array) {
-    const res = new Set()
+    const res = []
 
-    for (const i = array.length; i >=0; i--){
+    for (let i = array.length; i >=0; i--){
         if (!res.has(array[i])){
             res.push[i]
         }
