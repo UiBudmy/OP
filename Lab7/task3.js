@@ -2,7 +2,7 @@
 
 function unique(array) {
     let res = []
-    for (let i = array.length - 1; i >= 0; i--) {
+    for (let i = 0; i <= array.length; i++) {
         if (res.includes(array[i])){
             array.splice(i, 1)
         } else {
