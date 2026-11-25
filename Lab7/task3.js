@@ -1,7 +1,7 @@
 'use strict'
 
 function unique(array) {
-    const res = []
+    const res = new Set()
 
     for (const i = array.length; i >=0; i--){
         if (!res.has(array[i])){
