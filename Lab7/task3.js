@@ -3,11 +3,15 @@
 function unique(array) {
     const res = []
 
-    for (const i = array.lenth; i >= 0; i--){
-        if (rem.has(array[i])){
+    for (const elem of array){
+        if (rem.has(array[elem])){
             array.splice(i, 1)
         } else {
-            res.push
+            res.push[elem]
         }
     }
+    return res
 }
+
+const result = unique([2, 1, 1, 3, 2]);
+console.log(result);
