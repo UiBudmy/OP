@@ -2,9 +2,10 @@
 
 function unique(array) {
     const res = []
+    const check = new Set(res)
 
     for (let i = array.length; i >=0; i--){
-        if (!res.has(array[i])){
+        if (!check.has(array[i])){
             res.push[i]
         }
     }
