@@ -9,6 +9,7 @@ function unique(array) {
             res.push(array[i])
         }
     }
+    return array
 }
 
 const result = unique([2, 1, 1, 3, 2]);
