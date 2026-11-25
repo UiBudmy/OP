@@ -1,10 +1,8 @@
 'use strict'
 
 function store(value) {
-    let res = value
-
-    return function() {
-        return res
+    return function(){
+        return value
     }
 }
 
