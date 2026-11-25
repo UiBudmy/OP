@@ -1,12 +1,10 @@
 'use strict'
 
 function unique(array) {
-    const res = []
-    const check = new Set(res)
-
-    for (const elem of array){
-        if (!check.has(array[elem])){
-            res.push[elem]
+    let res = []
+    for (let i = array.length; i >= 0; i--){
+        if (!res.some(array[i])){
+            res.push(array[i])
         }
     }
     return res
