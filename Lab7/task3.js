@@ -3,11 +3,9 @@
 function unique(array) {
     const res = []
 
-    for (const elem of array){
-        if (rem.has(array[elem])){
-            array.splice(i, 1)
-        } else {
-            res.push[elem]
+    for (const i = array.length; i >=0; i--){
+        if (!res.has(array[i])){
+            res.push[i]
         }
     }
     return res
