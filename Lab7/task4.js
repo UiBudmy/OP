@@ -1,10 +1,10 @@
 'use strict'
 
 function difference(array1, array2) {
-    const rem = new Set(array2)
+    const ar2 = new Set(array2)
 
     for (let i = array1.length - 1; i>=0; i--) {
-        if (rem.has(array1[i])){
+        if (ar2.has(array1[i])){
             array1.splice(i, 1)
         }
     }
